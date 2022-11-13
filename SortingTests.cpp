@@ -53,16 +53,6 @@ int main()
     double end4;
     double start5;
     double end5;
-    double change1; //start and end variables for all the timers
-    double idc1;
-    double change2;
-    double idc2;
-    double change3;
-    double idc3;
-    double change4;
-    double idc4;
-    double change5;
-    double idc5;
     Sort selectInfo; 
     Sort insertInfo;  // one for each sort 
     Sort quickInfo; 
@@ -165,34 +155,6 @@ int main()
     start5 = clock(); 
     Shell(arry1, numOfElements, gapVal2, count2, shellInfo2); 
     end5 = clock(); 
-
-    change1 = clock(); //start timer
-    Insertion(arry1, numOfElements, insertInfo); //call function 
-    idc1 = clock(); // end timer 
-
-    copyArry(arry1, arry2, numOfElements);
-
-    change2 = clock(); //rise repeat first one byt change the function 
-    Selection(arry1, numOfElements, selectInfo);
-    idc2 = clock();
-
-    copyArry(arry1, arry2, numOfElements);
-
-    change3 = clock();
-    Quick(arry1, 0, (numOfElements - 1), quickInfo);
-    idc3 = clock();
-
-    copyArry(arry1, arry2, numOfElements);
-
-    change4 = clock();
-    Shell(arry1, numOfElements, gapVal, count, shellInfo1);
-    idc4 = clock();
-
-    copyArry(arry1, arry2, numOfElements);
-
-    change5 = clock();
-    Shell(arry1, numOfElements, gapVal2, count2, shellInfo2);
-    idc5 = clock();
 
     cout << endl; 
 
