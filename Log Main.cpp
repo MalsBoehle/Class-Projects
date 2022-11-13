@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-#include "Log.h" //   ___//__//___
+#include "Log.h" //                   ___//__//___
 				 //  (@)_LOG_GAME_)  I made you a log to enjoy while grading :)
 
 /*
